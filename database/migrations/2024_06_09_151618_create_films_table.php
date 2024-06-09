@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('description');
             $table->string('country');
             $table->string('release_date');
-            $table->string('genre');
+            $table->string('genre')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
